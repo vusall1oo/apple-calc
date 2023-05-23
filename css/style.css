@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.iphone-canvas {
+    width: 300px;
+    height: 600px;
+    border-radius: 50px;
+    position: relative;
+    border: 4px solid rgb(182, 182, 182);
+}
+
+.iphone-canvas-2 {
+    width: 300px;
+    height: 600px;
+    border-radius: 50px;
+    position: relative;
+    border: 4px solid rgb(182, 182, 182);
+}
+
+.clock-time {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-time h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.clock-time h1 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.battery-phone {
+    background-color: rgba(0, 0, 0, 0.497);
+    border-radius: 7px;
+    border: 1px solid rgba(128, 128, 128, 0.155);
+    width: 130px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 5px;
+}
+
+.weather-one {
+    display: flex;
+    gap: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.weather-two {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.weather-three {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: rgba(145, 145, 145, 0.726);
+}
+
+.weather-div {
+    background-color: rgba(0, 0, 0, 0.497);
+    border-radius: 7px;
+    border: 1px solid rgba(128, 128, 128, 0.155);
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: ce;
+    justify-content: center;
+    height: 70px;
+    padding: 5px;
+}
+
+.one {
+    display: flex;
+    gap: 5px;
+}
+
+.two {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.progress-bar {
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    height: 7px;
+    z-index: 2;
+    position: absolute;
+}
+
+.widgets {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 30%;
+    padding: 5px;
+}
+
+.progress-bar-front {
+
+    width: 115px;
+    border-radius: 50px;
+    background-color: rgb(33, 33, 33);
+    height: 7px;
+    z-index: -1;
+
+}
+
+.three {
+    position: relative;
+}
+
+.calculate-screen {
+    background-color: black;
+    width: 280px;
+    height: 580px;
+    border-radius: 40px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+.calculator-app {
+    width: 280px;
+    height: 450px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
+    bottom: -1.95px;
+    right: -0.45px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    overflow: hidden;
+    height: 22%;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 58px;
+    padding: 10px;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    height: 55px;
+    cursor: pointer;
+}
+
+.percent {
+    background-color: #a5a5a5;
+    border: none;
+    color: black;
+}
+
+.item1 {
+    background-color: #a5a5a5;
+    border: none;
+    color: black;
+}
+
+.item3 {
+    background-color: #ff9f0a;
+    border: none;
+    color: white;
+
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+    color: white;
+}
+
+.numbers,
+.comma {
+    background-color: #343434;
+    border: none;
+}
+
+.result span {
+
+    font-size: 60px;
+    padding-right: 15px;
+    justify-self: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.negative,
+.clear {
+    color: black;
+}
+
+.itemZero {
+    background-color: #343434;
+    width: 130px;
+    border: none;
+    justify-content: flex-start;
+    padding-left: 20px;
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-row-gap: 8px;
+    padding: 10px;
+    background-color: black;
+    grid-template-columns: repeat(4, 25%);
+}
+
+
+
+.iphone-screen {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    height: 580px;
+    border: 2px solid gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://raw.githubusercontent.com/zouraiz523/iphone-14-pro-max/main/Phone%2014%20Pro%20Max%20and%20Dynamic%20Island/img-bg.webp");
+
+    border-radius: 40px;
+}
+
+.iphone-screen-2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    height: 580px;
+
+    border-radius: 40px;
+}
+
+.screen {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.dynamic-island {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.screen-2 {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.dynamic-island-2 {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.swiper-icon {
+    background-color: white;
+    width: 115px;
+    display: flex;
+    position: absolute;
+    top: 98%;
+    left: 86px;
+
+    justify-content: center;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.camera {
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 82px;
+    background: #121212;
+    box-shadow: 0 0 0.2px grey;
+}
+
+.swiper-icon-2 {
+    background-color: white;
+    width: 115px;
+    display: flex;
+    position: absolute;
+    top: 99%;
+    left: 86px;
+
+    justify-content: center;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.camera-2 {
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 82px;
+    background: #121212;
+    box-shadow: 0 0 0.2px grey;
+}
+
+.up-icons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1000;
+}
+
+.down-icons {
+    display: flex;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    position: relative;
+    top: 10%;
+    height: 230px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.phone-icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11151b;
+    transition: .4s ease;
+
+}
+.camera-icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11151b;
+    transition: .4s ease;
+}
+.up-icons-2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -44%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 17px;
+    padding-right: 15px;
+    z-index: 1000;
+  
+}
+.bi-unlock-fill
+{
+    position: relative;
+    top: 34px;
+}
+.camera-icon:hover
+{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+.phone-icon:hover
+{
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+
+@media only screen and (min-width:321px) and (max-width:767px) {
+
+    .container {
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+}
